@@ -90,31 +90,34 @@ nav ul li:hover {
 .about {
   background-color: rgb(255, 255, 255);
   height: 700px;
-  margin-bottom: 400px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
-.column {
+/* .column {
   width: 50%;
+  display: grid;
+  grid-template-columns: 25% 25%;
+} */
+.column {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-
 .columnAboutMe {
   flex-direction: column;
   display: flex;
   margin: 120px 100px;
 }
 
-.columnSkills {
-  flex-direction: column;
-  display: flex;
+/* .columskills-imagenes {
+  width: 50%;
+  grid-template-columns: 50% 50%;
+  display: grid;
   margin: 120px 420px;
-}
+} */
 
-.columnSoftSkills {
+/* .columnSoftSkills {
   margin: 120px 100px;
-}
+} */
 
 #projects {
   background-color: rgb(168, 143, 1);
@@ -152,8 +155,8 @@ button a:hover {
 }
 
 .about h1 {
-  font-size: 80px;
-  width: 100%;
+  font-size: 40px;
+  color: rgb(255, 175, 4);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -164,17 +167,16 @@ button a:hover {
   font-size: 30px;
   text-align: justify;
 
-  width: 100%;
   height: 10%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
+/* 
 .column .imagenes {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
   margin: 0px 30px;
 }
 
@@ -184,7 +186,16 @@ button a:hover {
   width: 150px;
 }
 
-/*
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.proj img {
+  width: 450px;
+  height: 450px;
+}
+
 .skills img {
   flex: 33%;
   height: 50px;
@@ -201,7 +212,7 @@ button a:hover {
 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-} 
+}
 /*
 .imagenes #front1 {
   width: 300px;
@@ -253,19 +264,8 @@ button a:hover {
     "Lucida Sans", Arial, sans-serif;
 }
 
-*/
-
-.columnSoftSkills ul {
-  font-size: 30px;
-  list-style: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  display: inline-block;
-  font-weight: bold;
-  color: rgb(11, 17, 109);
-/* }
+ /* 
 .proj h1 {
-  position: absolute;
   top: 1163px;
   left: 620px;
   font-size: 70px;
@@ -276,60 +276,71 @@ button a:hover {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.proj #Maihao {
-  position: absolute;
-  top: 1300px;
-  left: 40px;
-  height: 400px;
-  width: 700px;
-}
-.proj #Platforms {
-  position: absolute;
-  top: 1300px;
-  left: 780px;
-  height: 400px;
-  width: 700px;
+.columnSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container {
-  position: absolute;
-  display: inline-block;
-  left: 220px;
-  width: 60%;
-  height: 80%;
-  background-color: rgb(163, 145, 145);
-  margin: 60px;
-  border: 8px solid rgb(255, 175, 4);
-}
-.container .row h2 {
-  font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin: 20px;
-}
-.row input {
-  display: block;
-  width: 80%;
-  margin: 40px 100px 60px 80px;
-  font-size: 20px;
-  border: 3px solid rgb(255, 175, 4);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.row input:hover {
-  background-color: rgb(240, 227, 114);
+.columskills-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container .row textarea {
-  font-size: 30px;
-  margin-top: 0px;
-  margin-left: 80px;
-  width: 80%;
-  height: 200px;
-  border: 3px solid rgb(255, 175, 4);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.row textarea:hover {
-  background-color: rgb(240, 227, 114);
+.columskills-imagenes img {
+  margin: 10px;
+  max-width: 150px;
+  max-height: 150px;
 } */
+
+.columSkills {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  margin: 120px 100px;
+}
+
+.columnSoftSkills ul {
+  font-size: 30px;
+  list-style: none;
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: inline-block;
+  font-weight: bold;
+
+  flex-direction: column;
+  display: flex;
+  margin: 120px 340px;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 2;
+}
+
+#title {
+  font-size: 40px;
+  color: rgb(255, 175, 4);
+  margin-bottom: 10px;
+}
+.columnSoftSkills h1,
+.columnSkills {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.columnSkills h1 {
+  font-size: 40px;
+}
+.columskills-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columskills-imagenes img {
+  margin: 20px;
+  max-width: 150px;
+  max-height: 150px;
+}
