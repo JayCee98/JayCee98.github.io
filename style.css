@@ -1,0 +1,482 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  width: 100%;
+}
+
+header {
+  background-image: url(/FOTOS/elec.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: middle center;
+  background-size: 100% 400px;
+  text-align: center;
+}
+
+.infoName {
+  display: flex;
+}
+
+header img {
+  top: 300px;
+  position: absolute;
+
+  height: 190px;
+  border-radius: 50%;
+  border: 1px solid black;
+  right: 75px;
+}
+
+header h1 {
+  color: rgb(255, 175, 4);
+
+  position: relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  top: 20px;
+  margin-left: 40px;
+}
+
+header h2 {
+  position: relative;
+  top: 50px;
+  color: rgb(255, 175, 4);
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+nav {
+  margin-top: 120px;
+  font-size: 30px;
+}
+
+header nav ul {
+  color: rgb(235, 231, 20);
+
+  height: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* display: inline-block; */
+  display: grid;
+}
+
+nav ul li {
+  font-size: 30px;
+  text-decoration: none;
+  /* display: inline-block; */
+  padding: 5px;
+
+  color: rgb(255, 175, 4);
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+nav ul li:hover {
+  color: rgb(191, 219, 29);
+}
+
+.about {
+  background-color: rgb(255, 255, 255);
+  height: 700px;
+  margin-bottom: 100px;
+}
+/* 
+.column {
+  display: grid;
+  grid-template-columns: 50% 50%;
+} */
+.columnAboutMe {
+  flex-direction: column;
+  display: flex;
+  margin: 120px 50px;
+}
+
+button {
+  height: 20px;
+  width: 120px;
+  background-color: transparent;
+  border: 0px solid transparent;
+
+  position: absolute;
+  left: 70px;
+  top: 58px;
+
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+button a {
+  color: rgb(255, 175, 4);
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+button a:hover {
+  color: rgb(191, 219, 29);
+}
+
+.h1aboutme {
+  font-size: 40px;
+  color: rgb(255, 175, 4);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 50px;
+}
+
+.h1soft {
+  font-size: 40px;
+  color: rgb(255, 175, 4);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 100px;
+}
+
+.h1skills {
+  font-size: 40px;
+  color: rgb(255, 175, 4);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 150px;
+}
+
+.about p {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 14px;
+
+  height: 10%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.columSkills {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+/* .h1CSkills {
+  margin-left: 100px;
+} */
+
+.columnSoftSkills ul {
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: inline-block;
+  font-weight: bold;
+
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  /* margin-left: 110px; */
+  margin-bottom: 120px;
+  gap: 20px;
+  margin-top: 20px;
+}
+/* .columns {
+  display: grid;
+  grid-template-columns: 2;
+} */
+/* 
+#title {
+  font-size: 40px;
+  color: rgb(255, 175, 4);
+  margin-bottom: 10px;
+} */
+/* .columnSoftSkills h1,
+.columnSkills {
+  margin-top: 0;
+  font-size: 40px;
+} */
+
+.columnSkills h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.columskills-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columskills-imagenes img {
+  margin: 20px;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#projects {
+  display: grid;
+  margin-top: 0px;
+
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas con ancho flexible */
+}
+
+.project img {
+  width: 100%;
+
+  height: 100%;
+  border: 4px solid black;
+}
+
+.crafty {
+  height: 300px;
+}
+
+#h2Projects {
+  margin-top: 800px;
+  font-size: 40px;
+  color: rgb(255, 175, 4);
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 400px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+  .h1aboutme {
+    font-size: 40px;
+    color: rgb(255, 175, 4);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-left: 50px;
+  }
+
+  .h1soft {
+    font-size: 50px;
+    color: rgb(255, 175, 4);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-left: 280px;
+    margin-top: 120px;
+  }
+
+  .h1skills {
+    font-size: 40px;
+    color: rgb(255, 175, 4);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-left: 150px;
+  }
+
+  header {
+    background-image: url(/FOTOS/elec.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: middle center;
+    background-size: 100% 400px;
+  }
+
+  header img {
+    width: 200px;
+    top: 300px;
+    position: absolute;
+    left: 45%;
+    height: 190px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+
+  header h1 {
+    color: rgb(255, 175, 4);
+
+    text-align: center;
+    position: relative;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 70px;
+    top: 150px;
+    margin-left: 300px;
+  }
+
+  header h2 {
+    position: relative;
+    top: 50px;
+    color: rgb(255, 175, 4);
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 50px;
+  }
+  nav {
+    position: absolute;
+    margin-left: 1600px;
+    margin-top: -70px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  header nav ul {
+    color: rgb(235, 231, 20);
+    text-decoration: none;
+    list-style: none;
+    height: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: flex;
+  }
+
+  nav ul li {
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 35px;
+
+    color: rgb(255, 175, 4);
+
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  nav ul li:hover {
+    color: rgb(191, 219, 29);
+  }
+
+  .about {
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    margin-bottom: 100px;
+  }
+
+  .column {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .columnAboutMe {
+    flex-direction: column;
+    display: flex;
+    margin: 120px 100px;
+  }
+
+  button {
+    height: 20px;
+    width: 120px;
+    background-color: transparent;
+    border: 0px solid transparent;
+
+    position: absolute;
+    left: 65px;
+    top: 52px;
+
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  button a {
+    color: rgb(255, 175, 4);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  button a:hover {
+    color: rgb(191, 219, 29);
+  }
+
+  .about p {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+
+    height: 10%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .columSkills {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .h1CSkills {
+    margin-left: 100px;
+  }
+
+  .columnSoftSkills ul {
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+
+    flex-direction: column;
+    display: flex;
+    margin: 10px 280px;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: 2;
+  }
+
+  /* #title {
+    font-size: 40px;
+    color: rgb(255, 175, 4);
+    margin-bottom: 10px;
+  } */
+  /* .columnSoftSkills h1,
+  .columnSkills {
+    margin-top: 0;
+    font-size: 40px;
+  } */
+
+  .columnSkills h1 {
+    font-size: 40px;
+  }
+  .columskills-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .columskills-imagenes img {
+    margin: 20px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  #projects {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project img {
+    width: 100%;
+
+    height: 100%;
+    border: 4px solid black;
+  }
+
+  .crafty {
+    height: 300px;
+  }
+
+  #h2Projects {
+    font-size: 40px;
+    color: rgb(255, 175, 4);
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+}
