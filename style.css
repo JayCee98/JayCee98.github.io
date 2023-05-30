@@ -135,7 +135,7 @@ button a:hover {
   color: rgb(255, 175, 4);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-left: 100px;
+  text-align: center;
 }
 
 .h1skills {
@@ -265,7 +265,7 @@ button a:hover {
     color: rgb(255, 175, 4);
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    margin-left: 280px;
+    text-align: center;
     margin-top: 120px;
   }
 
@@ -318,7 +318,7 @@ button a:hover {
   }
   nav {
     position: absolute;
-    margin-left: 1600px;
+    margin-left: 1300px;
     margin-top: -70px;
     font-size: 30px;
     text-decoration: none;
@@ -417,7 +417,7 @@ button a:hover {
     display: flex;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    display: inline-block;
+
     font-weight: bold;
 
     flex-direction: column;
