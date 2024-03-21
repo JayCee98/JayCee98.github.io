@@ -2,136 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='CSS/style.css' type='text/css'>
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/811a7316ca.js" crossorigin="anonymous"></script>
+    <title>Tu Nombre - Portafolio</title>
 </head>
 <body>
-    <header id="home">
-        <div class="infoName">  
-            <h1>Joan Canals</h1>
-            <h1>Full-Stack Developer</h1></div>
-      
-            <div class="imagelogo">
-                <img src="/FOTOS/foto.jpg">
-            </div>
-        
-
-        <button class="button">
-            <a href="PDF/CV.pdf" download="CV" class="button">Download CV</a> <br> <br>
-            <a href="PDF/FP DUAL MEMÒRIA.pdf" download="CV" class="button"> Memoria Dual</a>
-        </button>
-            
-
-        <nav>
-            <ul>
-
-                <a href="#home"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#projects"><li>Projects</li></a>
-              
-        
-                
-            </ul>
-        </nav>
-    
-        
-    </header>
-
-    <div id="home">
-        
-
-
-
-    <div id="about" class="about">
-        
-         <div class="column"> 
-            <div class="columnAboutMe">
-          <h1 class="h1aboutme">About me </h1><br>
-          <p> Student of Web Development with
-            1 year of experience in the use 
-            of web technologies and 5 years 
-            of experience in object-oriented
-            programming, during my stay in
-            Computer Engineering.
-           </p>
-        </div> 
-
-        <div class="columnSoftSkills">
-            <h1 class="h1soft">Soft Skills</h1>
-            <ul>
-                <li>Scrum Teamwork</li>
-                <li>Problem Solving</li>
-                <li>Creativity</li>
-                <li>Interpersonal Skills</li>
-                <li>Clear Communication</li>
-            </ul>
-      </div> 
-    </div>
-           
-            
-           
-                <div class="columSkills">
-                <h1 class="h1skills">Skills</h1>
-                <div class="columskills-imagenes">
-                    <img id="front1" src="/FOTOS/954889.png">
-                    <img id="php" src="/FOTOS/PHP-logo.svg.png">
-                    <img id="java" src="/FOTOS/226777.png">
-                    <img id="sql" src="/FOTOS/Oracle_SQL_Developer-Logo.wine.png">
-                    <img id="c" src="/FOTOS/306px-ISO_C++_Logo.svg.png">
-                    <img id="c" src="/FOTOS/laravel.png">
-                    <img src="/FOTOS/git.png" alt="">
-                    <img src="/FOTOS/vagrant.webp" alt="">
-                </div>
-            </div>
-        </div>
-        
-        
-        <h2 id="h2Projects">Proyectos</h2>
-        <section id="projects">
-            
-            <div class="project">
-                <img id="Maihao"src="/projects/pics/Maihao.jpg">
-            </div>
-            <div class="project">
-                <img id="Platforms" src="/projects/pics/gexpenses.png">
-            </div>
-            <div class="project">
-                <img id="crafty" src="/projects/pics/landing page.png">
-            </div>
-            <div class="project">
-                <img id="javafx" src="/projects/pics/java.png">
-             
-             
-            </div>
-        </div>
-         </section>
   
-        
-<!--   
-    <div id="projects">
-        <div class="proj">
-            <h1>Projects</h1>
-            <img id="Maihao"src="/projects/pics/Maihao.jpg">
-            <img id="Platforms" src="/projects/pics/Platforms.jpg">
-        </div>
-        
-    </div>  -->
-     
-<!-- 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <h2>Contact Me</h2>
-                <input type="text" class="field" id="text" placeholder="Your Name">
-                <input type="email" class="field" id="email" placeholder="Your Email">
-                <textarea class="field" placeholder="Message"></textarea>
+  <nav>
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+  </div>
+  <div class="containernav">
+    <ul class="nav-list">
+      <li><a class="translate" href="#" data-es="Inicio" data-en="Home">Home</a></li>
+      <li><a class="translate" href="#about" data-es="Sobre mí" data-en="About me">About me</a></li>
+      <li><a class="translate" href="#projects"  data-es="Proyectos" data-en="Projects">Projects</a></li>
+      <li><a class="translate" href="#contact"  data-es="Contacto" data-en="Contact me">Contact me</a></li>
+      <div id="download-cv">
+        <button id="style"><i class="fa-solid fa-lightbulb"></i></button>
+        <button id="language"><i class="fa-solid fa-earth-americas"></i></button>
+        <a href="cv.pdf" download>
+            <button id="cv"><i class="fa-solid fa-file"></i></button>
+        </a>
+    </div>
+  </ul>
+  
+  </div>
+ 
+
+  
+</nav>
+    <!-- Sección Home -->
+    <section id="home">
+      <div class="image">
+        <img src="/images/clasic.jpg" alt="">
+      </div>
+        <h1>JOAN CANALS</h1>
+        <p>FULL STACK DEVELOPER</p>
+    </section>
+
+    <!-- Sección About Me -->
+    <section id="about">
+        <h2 class="translate" data-es="SOBRE MÍ" data-en="ABOUT ME">ABOUT ME</h2>
+        <p  id="aboutme" class="translate" data-es="Desarrollador Full Stack Junior con varios años de experiencia en el uso de diferentes tipos de
+        bases de datos, tecnologías web, y con amplia experiencia en programación orientada a objetos
+        durante mi estancia en la carrera de Ingeniería Informática" data-en="Junior Full Stack Developer with several years of experience in the use of different types of
+        databases, web technologies, and with extensive experience in object-oriented programming
+        during my stay in the career of Computer Engineering"></p>
+    </section>
+
+    <!-- Sección Projects -->
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project-container">
+          <div class="project">
+            <h3>Weather App</h3>
+            <img src="images/weather_app.PNG" alt="Proyecto 1">
+            <div class="links-projects">
+              <a href="https://github.com/JayCee98/PortfolioProjects/tree/main/weather-app">GITHUB LINK</a>
+              <a href="https://scintillating-biscuit-da66c8.netlify.app">DEMO LINK</a>
             </div>
+            
+            
+             
+          </div>
+  
+          <div class="project">
+              <img src="proyecto2.jpg" alt="Proyecto 2">
+              <h3>Proyecto 2</h3>
+              <p>Descripción del proyecto 2.</p>
+          </div>
+
+          <div class="project">
+            <img src="proyecto2.jpg" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
         </div>
-    </div> -->
-     
-    
-        
-    </body>
+
+
+        <div class="project">
+          <img src="proyecto2.jpg" alt="Proyecto 2">
+          <h3>Proyecto 2</h3>
+          <p>Descripción del proyecto 2.</p>
+      </div>
+
+      <div class="project">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto 2.</p>
+    </div>
+
+    <div class="project">
+      <img src="proyecto2.jpg" alt="Proyecto 2">
+      <h3>Proyecto 2</h3>
+      <p>Descripción del proyecto 2.</p>
+  </div>
+
+  
+        </div>
+       
+        <!-- Agrega más proyectos según sea necesario -->
+
+    </section>
+
+    <!-- Sección Contact Me -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="container-contact">
+          <div class="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>linkedin.com/in/joancanalsortiz/</p>
+          </div>
+          <div class="mail">
+            <i class="fa-solid fa-m"></i>
+            <p>jco98web@gmail.com</p>
+          </div>
+          <div class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>+34 722222540</p>
+          </div>
+        </div>
+        <!-- Agrega tus detalles de contacto, como correo electrónico o enlaces a redes sociales -->
+    </section>
+
+</body>
+<script src="index.js"></script>
 </html>

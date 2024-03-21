@@ -1,0 +1,275 @@
+
+:root{
+  --section-color: #1f1f1f;
+  --color-letter: #d09905;
+  --color-background:  #1f1f1f;
+}
+
+body {
+  font-family: 'Arvo';
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+nav {
+  background-color: var(--color-background);
+  margin: 0px 10px;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-letter);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav button {
+  background-color: var(--color-letter);
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Arvo';
+  border-radius: 10px;
+}
+
+#cv {
+  margin-right: 30px;
+}
+
+section {
+  
+  padding: 5vw;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color:var(--color-letter);
+  background-color: var(--color-background);
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: 3px solidvar(--color-letter);
+}
+
+#projects{
+  text-align: center;
+}
+
+#projects h2{
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+#home {}
+
+#about {}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.project {
+  border: 1px solid var(--color-letter);
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  max-width: 350px; /* Ajusta el ancho máximo según tus necesidades */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+/* .project {
+  width: calc(33.33% - 20px);
+  
+  box-sizing: border-box;
+} */
+.project a {
+  text-decoration: none;
+  color: var(--color-letter) ;
+  margin: 12px;
+  font-size: 22px;
+}
+
+
+#contact {}
+
+
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+
+
+span {
+  position: absolute;
+  background-color: greenyellow;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: ani 1s linear infinite;
+}
+
+@keyframes ani {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.s;
+  }
+  100% {
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+#contact {
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+}
+
+.container-contact {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  justify-content: center;
+  padding: 10px; 
+}
+
+.linkedin,
+.mail,
+.whatsapp {
+  flex: 1; /* Hace que cada div ocupe el mismo espacio dentro del contenedor flex */
+  max-width: 300px; /* Puedes ajustar esto según tus necesidades para limitar el ancho máximo */
+  margin: 10px; /* Agrega espacio entre los elementos para mejorar la apariencia */
+  text-align: center;
+}
+
+/* Asegúrate de que la fuente de Font Awesome esté cargada correctamente en tu HTML */
+
+
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+
+  .linkedin,
+  .mail,
+  .whatsapp {
+    flex: 100%; /* Hace que los elementos ocupen el 100% del ancho en dispositivos más pequeños */
+    max-width: none; /* Anula el máximo ancho en dispositivos más pequeños */
+  }
+  .container-contact {
+    padding: 5px; /* Ajusta el espacio alrededor del contenedor en dispositivos más pequeños */
+  }
+  nav {
+    background-color:var(--color-background);
+    padding: 10px  0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav li {
+    margin: 0px;
+  }
+
+
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+   width: 100%;
+    background-color:var(--color-background);
+    display: none;
+    
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    padding: 12px 0px;
+   
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    color:var(--color-letter);
+  }
+
+ 
+}
