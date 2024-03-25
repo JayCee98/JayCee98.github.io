@@ -81,14 +81,14 @@ section {
   
   padding: 5vw;
   text-align: center;
-  min-height: 100vh;
+  min-height: 60vh;
   box-sizing: border-box;
   color:var(--color-letter);
   background-color: var(--color-background);
 }
 
 .image img {
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
   border-radius: 100%;
   border: 3px solidvar(--color-letter);
@@ -114,9 +114,9 @@ h2 {
 #about {}
 
 .project-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
   gap: 20px;
   text-align: center;
 }
